@@ -54,6 +54,10 @@ fun NewsScreen(
         LazyColumn(modifier = Modifier.weight(1f)) {
             if (news?.status == "ok") {
                 items(news?.articles ?: emptyList()) { article ->
+//                    AsyncImage(
+//                        model = article.urlToImage,
+//                        contentDescription = null
+//                    )
                     Text(article.title, fontWeight = FontWeight.Bold)
                     Text(article.title)
                 }
@@ -73,9 +77,7 @@ fun NewsScreen(
                 }
             },
             modifier = Modifier.fillMaxWidth()
-        ) {
-            Text("Поиск")
-        }
+        ) { Text("Поиск") }
     }
 }
 

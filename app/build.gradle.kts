@@ -73,6 +73,10 @@ dependencies {
     kapt(libs.androidx.room.room.compiler)
     // endregion
 
+    // region Coil
+    //implementation(libs.coil.compose)
+    // endregion
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
